@@ -1,0 +1,443 @@
+/* Estilos generales*/
+body {
+  background: #0a0a08;
+  color: #c8c2a8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Imagen de orden mayor en esquina superior derecha */
+.enlace-esquina {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.imagen-esquina {
+  width: 90px;
+  height: auto;
+  border: 2px solid #e8b84b;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.imagen-esquina:hover {
+  transform: scale(1.1);
+}
+
+/* Banner principal con navegación*/
+
+.banner-principal {
+  width: 100%;
+  height: 300px;
+  background: url("https://i.redd.it/fwv5gmgt5dtg1.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.navegacion-banner {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.navegacion-banner a {
+  color: #e8b84b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 1px solid #e8b84b;
+  padding: 8px 16px;
+  transition: 0.2s;
+}
+
+.navegacion-banner a:hover {
+  background: #e8b84b;
+  color: #000;
+}
+
+/*  Sección principal (Hero) */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.titulo-principal {
+  font-size: 4rem;
+  letter-spacing: 6px;
+  color: #fff;
+  line-height: 1;
+  margin: 0;
+}
+
+.titulo-principal span {
+  color: #e8b84b;
+}
+
+.subtitulo-principal {
+  font-size: 1rem;
+  color: #6e6a58;
+  margin-top: 1rem;
+  max-width: 600px;
+}
+
+/* Botones de la seccion principal  */
+.botones-hero {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boton {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid #e8b84b;
+  transition: 0.2s;
+}
+
+.boton-primario {
+  background: #e8b84b;
+  color: #000;
+}
+
+.boton-primario:hover {
+  background: transparent;
+  color: #e8b84b;
+}
+
+.boton-secundario {
+  background: transparent;
+  color: #c8c2a8;
+}
+
+.boton-secundario:hover {
+  color: #e8b84b;
+  border-color: #e8b84b;
+}
+
+/* Video de reclutamiento */
+.contenedor-video {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-video iframe {
+  border: 2px solid #e8b84b;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(232, 184, 75, 0.6);
+}
+
+
+/* Barra de estadísticas*/
+
+.barra-estadisticas {
+  background: #1a1a14;
+  border-top: 1px solid #e8b84b;
+  border-bottom: 1px solid #e8b84b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.item-estadistica {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.numero-estadistica {
+  font-size: 2rem;
+  color: #e8b84b;
+  display: block;
+}
+
+.etiqueta-estadistica {
+  font-size: 0.8rem;
+  color: #6e6a58;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Línea separadora dorada*/
+.separador {
+  border: none;
+  border-top: 1px solid #e8b84b;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+/* Secciones generales */
+
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+section p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #c8c2a8;
+  margin-bottom: 1rem;
+}
+
+/* Sección: Enemigos*/
+
+#enemigos h2 {
+  margin-bottom: 2rem;
+}
+
+.bloque-enemigo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bloque-enemigo h3 {
+  color: #e8b84b;
+  margin-bottom: 0.5rem;
+}
+
+.bloque-enemigo p {
+  font-size: 0.9rem;
+  color: #c8c2a8;
+  margin-bottom: 1rem;
+}
+
+.imagen-enemigo {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #e8b84b;
+}
+
+/* Colores por tipo de estratagema */
+
+.tipo-ofensivo {
+  color: red;
+  font-weight: bold;
+}
+
+.tipo-suministros {
+  color: #00c8ff;
+  font-weight: bold;
+}
+
+.tipo-defensivo {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.tipo-mision {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* Sección: Guía de supervivencia*/
+
+#guia {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#guia h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* Grilla de tarjetas de consejos */
+.grilla-consejos {
+  display: grid;     /* organiza el contenido en formato de cuadricula */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));      /* crea columnas que se ajustan*/
+  gap: 1.5rem;
+}
+
+.tarjeta-consejo {
+  background: #1a1a14;
+  border: 1px solid #e8b84b;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-consejo h3 {
+  color: #e8b84b;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.tarjeta-consejo p {
+  color: #c8c2a8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.tarjeta-consejo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(232, 184, 75, 0.6);
+}
+
+/* Sección: Reclutamiento */
+
+#reclutamiento {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #0a0a08;
+}
+
+#reclutamiento h2 {
+  color: #e8b84b;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+}
+
+#reclutamiento p {
+  color: #c8c2a8;
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Imagen del póster de reclutamiento */
+.imagen-reclutamiento {
+  margin-top: 2rem;
+}
+
+.imagen-reclutamiento img {
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #e8b84b;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(232, 184, 75, 0.6);
+}
+
+/* Botón de llamada a la acción */
+.bloque-accion {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.boton-accion {
+  display: inline-block;
+  background: #e8b84b;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 50px;
+  border-radius: 6px;
+  border: 2px solid #e8b84b;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.boton-accion:hover {
+  background: transparent;
+  color: #e8b84b;
+  box-shadow: 0 0 12px rgba(232, 184, 75, 0.6);
+}
+
+/* Pie de página (foter) */
+
+.pie-pagina {
+  background: #0a0a08;
+  border-top: 2px solid #e8b84b;
+  padding: 2rem 1rem;
+  color: #c8c2a8;
+}
+
+.contenido-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo y nombre a la izquierda */
+.pie-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-pie {
+  width: 50px;
+  height: auto;
+  border: 2px solid #e8b84b;
+  border-radius: 50%;
+}
+
+.pie-izquierda h3 {
+  color: #e8b84b;
+  margin-bottom: 0.5rem;
+}
+
+.pie-izquierda p {
+  font-size: 0.9rem;
+  color: #6e6a58;
+}
+
+/* Links de navegación en el pie */
+.enlaces-pie {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.enlaces-pie a {
+  color: #e8b84b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.enlaces-pie a:hover {
+  color: #fff;
+}
+
+/* Texto a la derecha del pie */
+.pie-derecha p {
+  font-size: 0.8rem;
+  color: #6e6a58;
+}
+
+.pie-derecha a {
+  color: #e8b84b;
+  text-decoration: none;
+}
+
+.pie-derecha a:hover {
+  color: #fff;
+}
